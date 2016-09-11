@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app='myApp'>
+    <section ng-controller="firstCtrl as vm">
+        <ul>
+            <li ng-repeat="lang in vm.languages">
+                <a href="#" ng-bind="lang.key"></a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="src/app.module.js"></script>
+    <script src="src/errorHandler.service.js"></script>
+    <script src="src/authHandler.service.js"></script>
+    <script src="src/first.service.js"></script>
+    <script src="src/first.controller.js"></script>
+</body>
+</html>
